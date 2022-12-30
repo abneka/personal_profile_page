@@ -55,7 +55,7 @@
                     <div class="home__data">
                         <h1 id="h_name" class="home__title">Hi ! <br> I'm <span class="name">Abesolom <sup> </sup></span> <span class="name alias">Kofi<sup><sub><sup><sub><sup> [alias]</sup></sub></sup></sub></sup></span> </h1>
                         <p class="home__description">FULL-STACK DEVELOPER</p>
-                        <a href="http://web-01.abdurem.tech/" target="_blank" class="button">Get Started</a>
+                        <a href="http://web-01.abdurem.tech/" target="_blank" class="button">Contact Me</a>
                     </div>   
                 </div>
             </section>
@@ -82,7 +82,7 @@
                             </li>
 
                         </ul>
-                        <a href="http://web-01.abdurem.tech/" target="_blank" class="button">Send a Message</a>
+                        <a href="http://web-01.abdurem.tech/" target="_blank" class="button">Download CV</a>
                     </div>
 
                     <div class="share__img">
@@ -95,22 +95,22 @@
             <section class="decoration section bd-container" id="decoration">
                 <h2 class="section-title">My Projects</h2>
                 <div class="decoration__container bd-grid">
-                    <div class="decoration__data">
+                    <div class="decoration__data" onclick="goto('h')">
                         <img src="assets/img/feature_1.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Front-end Developent</h3>
-                        <a class="button button-link">Viewers can like and dislike posts, they can also see how many likes and dislikes each posts have.</a>
+                        <h3 class="decoration__title">Habtamu Coffee</h3>
+                        <a class="button button-link">Worked as freelance worker in habtamu coffee import and export plc company's web page</a>
                     </div>
 
-                    <div class="decoration__data">
+                    <div class="decoration__data" onclick="goto('g')">
                         <img src="assets/img/feature-2.jpg" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Users Anonymity</h3>
-                        <a  class="button button-link">Users can post freely because their identity is hidden, it doesn't require signing up.</a>
+                        <h3 class="decoration__title">Github Finder</h3>
+                        <a  class="button button-link">Github finder app using react and github api</a>
                     </div>
 
-                    <div class="decoration__data">
+                    <div class="decoration__data" onclick="goto('f')">
                         <img src="assets/img/feature-3.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Tags of Interest</h3>
-                        <a  class="button button-link">Users can use the tags to find posts based on their interest.</a>
+                        <h3 class="decoration__title">Feedback app</h3>
+                        <a  class="button button-link">feedback app made by using react, express and mongo</a>
                     </div>
                 </div>
             </section>
@@ -166,24 +166,24 @@
             <div class="footer__container bd-container bd-grid">
                 <div class="footer__content">
                     <h3 class="footer__title">
-                        <a href="#" class="footer__logo">Whisper</a>
+                        <a href="#" class="footer__logo">Abesolom Nekahiwot</a>
                     </h3>
-                    <p class="footer__description">A Platform to be free.</p>
+                    <p class="footer__description">FULL-STACK DEVELOPER</p>
                 </div>
 
                 <div class="footer__content">
-                    <h3 class="footer__title">Our Service</h3>
+                    <h3 class="footer__title">Go-to</h3>
                     <ul>
                         <li><a href="#" class="footer__link">Home </a></li>
-                        <li><a href="#share" class="footer__link">Share</a></li>
-                        <li><a href="#decoration" class="footer__link">Features</a></li>
+                        <li><a href="#share" class="footer__link">About Me</a></li>
+                        <li><a href="#decoration" class="footer__link">My Projects</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__content">
-                    <h3 class="footer__title">Our Company</h3>
+                    <h3 class="footer__title">Contact Me</h3>
                     <ul>
-                        <li><a href="#accessory" class="footer__link">Our Team</a></li>
+                        <li><a href="#accessory" class="footer__link">Abesolom N.</a></li>
                         <a href="#" class="footer__social"><i class='bx bxl-github'></i></a>
                         <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
                         <a href="#" class="footer__social"><i class='bx bxl-linkedin'></i></a>
@@ -200,5 +200,18 @@
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
+        <script>
+            function goto(comm) {
+                if (comm == 'g'){
+                    window.open('http://githubfinder.abneka.tech', '_blank');
+                }
+                else if (comm == 'h'){
+                    window.open('http://habtamucoffee.com', '_blank');
+                }
+                else{
+                    window.open('http://feedback.abneka.tech', '_blank')
+                }
+            }
+        </script>
     </body>
 </html>

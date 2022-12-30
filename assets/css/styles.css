@@ -677,3 +677,7 @@ ul.skills-list li {
   padding-left: 25px;
   text-align: left;
 }
+
+.decoration__data {
+  cursor: pointer;
+}
