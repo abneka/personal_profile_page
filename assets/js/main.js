@@ -65,6 +65,8 @@ const darkTheme = 'dark-theme'
 const iconTheme = 'bx-toggle-right'
 const logo = document.getElementById('light')
 const logoDark = document.getElementById('dark')
+const mongo = document.getElementById('light_m')
+const mongo_d = document.getElementById('dark_m')
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -81,6 +83,8 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme)
   logo.classList[selectedTheme === 'dark' ? 'add' : 'remove']('dark-theme')
   logoDark.classList[selectedTheme === 'light' ? 'add' : 'remove']('dark-theme')
+  mongo.classList[selectedTheme === 'dark' ? 'add' : 'remove']('dark-theme')
+  mongo_d.classList[selectedTheme === 'light' ? 'add' : 'remove']('dark-theme')
 //   logoDark.classList.toggle(darkTheme)
 
 }
@@ -92,6 +96,8 @@ themeButton.addEventListener('click', () => {
     themeButton.classList.toggle(iconTheme)
     logo.classList.toggle(darkTheme)
     logoDark.classList.toggle(darkTheme)
+    mongo.classList.toggle(darkTheme)
+    mongo_d.classList.toggle(darkTheme)
 
 
     // We save the theme and the current icon that the user chose
